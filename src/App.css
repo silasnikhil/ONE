@@ -2,6 +2,17 @@
   text-align: center;
 }
 
+.grad {
+  background-image: linear-gradient(
+    to top,
+    #befcfd,
+    #b4fdf7,
+    #acfeef,
+    #a8ffe5,
+    #a8ffd8
+  );
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,12 +25,17 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-image: linear-gradient(
+    to right top,
+    #7d78ce,
+    #837dc9,
+    #8882c3,
+    #8d87be,
+    #918cb8
+  );
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }

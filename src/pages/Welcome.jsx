@@ -19,7 +19,7 @@ const Welcome = () => {
           height="100"
           width="100"
           alt="Facey"
-          className="d-inline-block align-top"
+          className="d-inline-block align-top pt-20"
         />
       </div>
       <div className="flex mt-5 px-10 py-10 justify-center font-sans font-semibold text-white">

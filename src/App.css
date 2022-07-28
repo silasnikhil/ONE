@@ -4,13 +4,17 @@
 
 .grad {
   background-image: linear-gradient(
-    to top,
-    #befcfd,
-    #b4fdf7,
-    #acfeef,
-    #a8ffe5,
-    #a8ffd8
+    to right top,
+    #7d78ce,
+    #837dc9,
+    #8882c3,
+    #8d87be,
+    #918cb8
   );
+  min-width: 100%;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
 .App-logo {
@@ -40,11 +44,34 @@
   color: white;
 }
 
+.Fact {
+  background-image: linear-gradient(
+    to right top,
+    #7d78ce,
+    #837dc9,
+    #8882c3,
+    #8d87be,
+    #918cb8
+  );
+  min-width: 100%;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
 .App-link {
   color: #61dafb;
 }
-
-
+/* 
+.bgif {
+  display: block;
+  background: white url("assets/bg.gif") no-repeat center;
+  min-width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+} */
 
 @keyframes App-logo-spin {
   from {

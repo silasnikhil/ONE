@@ -5,7 +5,7 @@ import NavB from "./components/NavB";
 import Button from "./components/Button";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MoodSelector from "./pages/MoodSelector";
-import FactPage from "./pages/FactPage";
+import WordPage from "./pages/WordPage";
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
             <Route path="/mood" element={<MoodSelector />}></Route>
 
             {/*Facts Page */}
-            <Route path="/start" element={<FactPage />}></Route>
+            <Route path="/start" element={<WordPage />}></Route>
           </Routes>
         </div>
       </BrowserRouter>

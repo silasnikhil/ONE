@@ -2,6 +2,21 @@
   text-align: center;
 }
 
+.grad {
+  background-image: linear-gradient(
+    to right top,
+    #7d78ce,
+    #837dc9,
+    #8882c3,
+    #8d87be,
+    #918cb8
+  );
+  min-width: 100%;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,12 +29,32 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-image: linear-gradient(
+    to right top,
+    #7d78ce,
+    #837dc9,
+    #8882c3,
+    #8d87be,
+    #918cb8
+  );
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Fact {
+  background-image: linear-gradient(
+    to right top,
+    #7d78ce,
+    #837dc9,
+    #8882c3,
+    #8d87be,
+    #918cb8
+  );
+  min-width: 100%;
+  min-height: 100vh;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -27,6 +62,77 @@
 .App-link {
   color: #61dafb;
 }
+/* 
+.bgif {
+  display: block;
+  background: white url("assets/bg.gif") no-repeat center;
+  min-width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+} */
+
+.bgif {
+  display: block;
+  background: white url("assets/bookbg.jpg") no-repeat center;
+  min-width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.quotebg {
+  display: block;
+  background: black no-repeat center;
+  min-width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.nearcen {
+  position: fixed;
+  top: 37%;
+  left: 15%;
+  /* bring your own prefixes */
+  transform: translate(-25%, -25%);
+}
+
+.nearcent {
+  position: fixed;
+  top: 52%;
+  right: 10%;
+  /* bring your own prefixes */
+  transform: translate(-25%, -25%);
+}
+
+.barpostop {
+  position: fixed;
+  top: 34%;
+  left: 20%;
+  /* bring your own prefixes */
+  transform: translate(-25%, -25%);
+}
+
+.barposdown {
+  position: fixed;
+  bottom: 33%;
+  right: 1%;
+  /* bring your own prefixes */
+  transform: translate(-25%, -25%);
+}
+
 
 @keyframes App-logo-spin {
   from {

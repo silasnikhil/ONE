@@ -6,6 +6,7 @@ import Button from "./components/Button";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MoodSelector from "./pages/MoodSelector";
 import WordPage from "./pages/WordPage";
+import QuotePage from "./pages/QuotePage";
 
 function App() {
   return (
@@ -20,8 +21,10 @@ function App() {
             {/*Mood Selector Page */}
             <Route path="/mood" element={<MoodSelector />}></Route>
 
-            {/*Facts Page */}
+            {/*Word Page */}
             <Route path="/start" element={<WordPage />}></Route>
+            {/*Fact Page */}
+            <Route path="/quote" element={<QuotePage />}></Route>
           </Routes>
         </div>
       </BrowserRouter>

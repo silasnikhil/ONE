@@ -73,6 +73,67 @@
   background-size: cover;
 } */
 
+.bgif {
+  display: block;
+  background: white url("assets/bookbg.jpg") no-repeat center;
+  min-width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.quotebg {
+  display: block;
+  background: black no-repeat center;
+  min-width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.nearcen {
+  position: fixed;
+  top: 37%;
+  left: 15%;
+  /* bring your own prefixes */
+  transform: translate(-25%, -25%);
+}
+
+.nearcent {
+  position: fixed;
+  top: 52%;
+  right: 10%;
+  /* bring your own prefixes */
+  transform: translate(-25%, -25%);
+}
+
+.barpostop {
+  position: fixed;
+  top: 34%;
+  left: 20%;
+  /* bring your own prefixes */
+  transform: translate(-25%, -25%);
+}
+
+.barposdown {
+  position: fixed;
+  bottom: 33%;
+  right: 1%;
+  /* bring your own prefixes */
+  transform: translate(-25%, -25%);
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

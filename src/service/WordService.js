@@ -1,16 +1,16 @@
 import axios from "axios";
 
 const wordList = [
-  "Abomasum",
-  "Absquatulate",
-  "Adagio",
-  "Alfresco",
-  "Alcazar",
+  "Flummox",
+  "obnoxious",
+  "scrupulous",
+  "dubious",
+  "sight",
   "Amok",
   "Amphisbaena",
-  "Antimacassar",
-  "Atingle",
-  "Bailiwick",
+  "meticulous",
+  "thorough",
+  "cautious",
 ];
 
 let obj;

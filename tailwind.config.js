@@ -4,17 +4,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        wordFont: ["Nunito Sans"],
+        alexbrush: ["Alex Brush", "cursive"],
+        vibes: ["Great Vibes", "cursive"],
+        scrips: ["Dancing Script", "cursive"],
+        julius: ["Julius Sans One", "sans-serif"],
+        shadows: ["Shadows Into Light", "cursive"],
       },
     },
   },
   plugins: [],
 };
-
-
-
-
-
-
-
-

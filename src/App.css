@@ -62,20 +62,10 @@
 .App-link {
   color: #61dafb;
 }
-/* 
-.bgif {
-  display: block;
-  background: white url("assets/bg.gif") no-repeat center;
-  min-width: 100%;
-  min-height: 100vh;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-} */
 
 .bgif {
   display: block;
-  background: white url("assets/bookbg.jpg") no-repeat center;
+  background: white no-repeat center;
   min-width: 100%;
   min-height: 100vh;
   background-repeat: no-repeat;
@@ -92,6 +82,15 @@
   background-attachment: fixed;
   background-size: cover;
 }
+.factbg {
+  display: block;
+  background: white no-repeat center;
+  min-width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
 
 .centered {
   position: fixed;
@@ -101,6 +100,13 @@
   transform: translate(-50%, -50%);
 }
 
+.header-centered {
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
 .nearcen {
   position: fixed;
   top: 37%;
@@ -133,6 +139,39 @@
   transform: translate(-25%, -25%);
 }
 
+.arrowpos {
+  position: fixed;
+  bottom: 15%;
+  left: 15%;
+  /* bring your own prefixes */
+  transform: translate(-25%, -25%);
+}
+
+.factbg {
+  display: block;
+  background: white no-repeat center;
+  min-width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.factcen {
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.blackbarpos {
+  position: fixed;
+  bottom: 28%;
+  right: 24%;
+  /* bring your own prefixes */
+
+}
 
 @keyframes App-logo-spin {
   from {

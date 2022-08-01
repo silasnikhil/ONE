@@ -141,8 +141,8 @@
 
 .arrowpos {
   position: fixed;
-  bottom: 15%;
-  left: 15%;
+  bottom: 10%;
+  right: 15%;
   /* bring your own prefixes */
   transform: translate(-25%, -25%);
 }
@@ -170,7 +170,6 @@
   bottom: 28%;
   right: 24%;
   /* bring your own prefixes */
-
 }
 
 @keyframes App-logo-spin {

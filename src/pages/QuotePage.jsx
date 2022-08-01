@@ -50,7 +50,7 @@ const QuotePage = () => {
               src={arrow}
               height="50"
               width="50"
-              alt="Sad"
+              alt="arrow"
               className=" hover: cursor-pointer transition ease-in-out over:-translate-y-1 hover:scale-150 delay-150"
             />
           </Link>

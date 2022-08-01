@@ -28,7 +28,7 @@ const WordPage = () => {
           <h2>Your word for the day</h2>
         </span> */}
 
-          <div className="mt-72 ml-10 flex-wrap absolute float-left font-sans font-extrabold text-black ">
+          <div className="mt-72 ml-5 flex-wrap absolute float-left font-sans font-extrabold text-black ">
             <h1 className=" font-sans ml-4 text-5xl float-left text-bold absolute">
               {jsonDataw[0].word}
             </h1>
@@ -52,7 +52,7 @@ const WordPage = () => {
                   src={arrow}
                   height="50"
                   width="50"
-                  alt="Sad"
+                  alt="arrow"
                   className=" hover: cursor-pointer transition ease-in-out over:-translate-y-1 hover:scale-150 delay-150"
                 />
               </Link>

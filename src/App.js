@@ -6,6 +6,8 @@ import MoodSelector from "./pages/MoodSelector";
 import WordPage from "./pages/WordPage";
 import QuotePage from "./pages/QuotePage";
 import FactPage from "./pages/FactPage";
+import ArticlePage from "./pages/ArticlePage";
+import FortunePage from "./pages/FortunePage";
 
 function App() {
   return (
@@ -24,6 +26,10 @@ function App() {
             <Route path="/quote" element={<QuotePage />}></Route>
             {/*Fact Page */}
             <Route path="/fact" element={<FactPage />}></Route>
+            {/*Article Page */}
+            <Route path="/article" element={<ArticlePage />}></Route>
+            {/*Fortune Page */}
+            <Route path="/fortune" element={<FortunePage />}></Route>
           </Routes>
         </div>
       </BrowserRouter>

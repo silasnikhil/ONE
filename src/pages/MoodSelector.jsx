@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const MoodSelector = () => {
   return (
-    <div className="flex-wrap justify-center">
+    <div className="flex-wrap justify-center gbg">
       <div>
         <img
           src={face}

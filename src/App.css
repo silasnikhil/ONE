@@ -17,6 +17,14 @@
   color: white;
 }
 
+.gbg {
+  background-color: black;
+  min-width: 100%;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -66,8 +74,6 @@
 .bgif {
   display: block;
   background: white no-repeat center;
-  min-width: 100%;
-  min-height: 100vh;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -96,7 +102,7 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  /* bring your own prefixes */
+
   transform: translate(-50%, -50%);
 }
 
@@ -104,47 +110,120 @@
   position: fixed;
   top: 15%;
   left: 50%;
-  /* bring your own prefixes */
+
   transform: translate(-50%, -50%);
-}
-.nearcen {
-  position: fixed;
-  top: 37%;
-  left: 15%;
-  /* bring your own prefixes */
-  transform: translate(-25%, -25%);
 }
 
 .nearcent {
   position: fixed;
   top: 52%;
   right: 10%;
-  /* bring your own prefixes */
+
   transform: translate(-25%, -25%);
 }
 
 .barpostop {
   position: fixed;
+  top: 30%;
+  left: 34%;
+  width: 400px;
+
+  transform: translate(-25%, -25%);
+}
+
+@media screen and (max-width: 900px) {
+  .barpostop {
+    position: fixed;
+    top: 29%;
+    left: 24%;
+    width: 280px;
+    transform: translate(-25%, -25%);
+  }
+}
+
+.quotestoppos {
+  position: fixed;
   top: 34%;
-  left: 20%;
-  /* bring your own prefixes */
+  left: 30%;
+  height: 80px;
+  width: 80px;
+
+  transform: translate(-25%, -25%);
+}
+
+@media screen and (max-width: 900px) {
+  .quotestoppos {
+    position: fixed;
+    top: 32%;
+    left: 18%;
+    height: 60px;
+    width: 60px;
+  }
+}
+
+.quotebottompos {
+  position: fixed;
+  bottom: 30%;
+  right: 28%;
+  height: 80px;
+  width: 80px;
+
+  transform: translate(-25%, -25%);
+}
+
+@media screen and (max-width: 900px) {
+  .quotebottompos {
+    position: fixed;
+    bottom: 15%;
+    right: 14%;
+    height: 60px;
+    width: 60px;
+    transform: translate(-25%, -25%);
+  }
+}
+
+.nearcen {
+  position: fixed;
+  top: 34%;
+  left: 30%;
+
   transform: translate(-25%, -25%);
 }
 
 .barposdown {
   position: fixed;
-  bottom: 33%;
-  right: 1%;
-  /* bring your own prefixes */
+  bottom: 30%;
+  right: 22%;
+  width: 400px;
+
   transform: translate(-25%, -25%);
 }
 
+@media screen and (max-width: 900px) {
+  .barposdown {
+    position: fixed;
+    bottom: 16%;
+    right: 4%;
+    width: 280px;
+    transform: translate(-25%, -25%);
+  }
+}
 .arrowpos {
-  position: fixed;
+  position: absolute;
   bottom: 10%;
-  right: 15%;
-  /* bring your own prefixes */
+  right: 20%;
+
   transform: translate(-25%, -25%);
+}
+
+@media screen and (max-width: 900px) {
+  .arrowpos {
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+
+    transform: translate(-25%, -25%);
+  }
 }
 
 .factbg {
@@ -161,29 +240,64 @@
   position: fixed;
   top: 45%;
   left: 50%;
-  /* bring your own prefixes */
+
   transform: translate(-50%, -50%);
 }
 
 .blackbarpos {
   position: fixed;
   bottom: 28%;
-  right: 26%;
-  /* bring your own prefixes */
+  right: 33%;
+  width: 576px;
+}
+
+@media screen and (max-width: 900px) {
+  .blackbarpos {
+    position: fixed;
+    bottom: 28%;
+    right: 27%;
+    width: 350px;
+  }
 }
 
 .blackbarpos1 {
   position: fixed;
-  bottom: 25%;
-  right: 26%;
-  /* bring your own prefixes */
+  bottom: 30%;
+  right: 35%;
+  width: 450px;
+}
+
+@media screen and (max-width: 900px) {
+  .blackbarpos1 {
+    position: fixed;
+    bottom: 15%;
+    right: 26%;
+    width: 350px;
+  }
 }
 
 .signpos {
   position: fixed;
-  top: -15%;
+  top: -38%;
   right: 45%;
-  /* bring your own prefixes */
+}
+
+@media screen and (max-width: 900px) {
+  .signpos {
+    position: fixed;
+    top: -15%;
+    right: 45%;
+  }
+}
+
+.MainContainer {
+  display: flex;
+  max-width: max-content;
+  max-height: max-content;
+  justify-content: space-between;
+  @media (max-width: 480px) {
+    padding: 40px 50px;
+  }
 }
 
 @keyframes App-logo-spin {

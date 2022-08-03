@@ -19,11 +19,11 @@ const FortunePage = () => {
 
   if (!loading) {
     return (
-      <div className="factbg absolute">
+      <div className="MainContainer factbg">
         <div className="header-centered font-shadows text-5xl text-black font-bold">
           YOUR FORTUNE FOR THE DAY!
         </div>
-        <div className="factcen mt-16 text-black flex-wrap text-center relative font-julius font-bold text-3xl">
+        <div className="factcen mt-16 max-h-96 max-w-xl text-black flex-wrap text-center relative font-julius font-bold text-3xl">
           <div>
             <img
               className="signpos"

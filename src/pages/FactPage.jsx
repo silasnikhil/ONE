@@ -20,15 +20,15 @@ const FactPage = () => {
 
   if (!loading) {
     return (
-      <div className="factbg absolute">
+      <div className="MainContainer factbg">
         <div className="header-centered font-shadows text-5xl text-black font-bold">
           YOUR FACT FOR THE DAY!
         </div>
-        <div className="factcen mt-8 text-black flex-wrap text-center relative font-julius font-bold text-3xl">
+        <div className="factcen mt-8 max-h-96 max-w-xl text-black flex-wrap text-wrap text-center relative font-julius font-bold text-3xl">
           {jsonDataw.text}
         </div>
         <div className="blackbarpos relative shadow-2xl">
-          <img src={bar} height="250" width="340" alt="Black Bar bottom" />
+          <img src={bar} alt="Black Bar bottom" />
         </div>
         <div className="arrowpos">
           <Link to="/article">

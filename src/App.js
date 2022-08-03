@@ -13,25 +13,23 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <div className=" grad mt-0">
-          <Routes>
-            {/*Welcome Page */}
-            <Route path="/" element={<Welcome />}></Route>
-            <Route path="/welcome" element={<Welcome />}></Route>
-            {/*Mood Selector Page */}
-            <Route path="/mood" element={<MoodSelector />}></Route>
-            {/*Word Page */}
-            <Route path="/start" element={<WordPage />}></Route>
-            {/*Quote Page */}
-            <Route path="/quote" element={<QuotePage />}></Route>
-            {/*Fact Page */}
-            <Route path="/fact" element={<FactPage />}></Route>
-            {/*Article Page */}
-            <Route path="/article" element={<ArticlePage />}></Route>
-            {/*Fortune Page */}
-            <Route path="/fortune" element={<FortunePage />}></Route>
-          </Routes>
-        </div>
+        <Routes>
+          {/*Welcome Page */}
+          <Route path="/" element={<Welcome />}></Route>
+          <Route path="/welcome" element={<Welcome />}></Route>
+          {/*Mood Selector Page */}
+          <Route path="/mood" element={<MoodSelector />}></Route>
+          {/*Word Page */}
+          <Route path="/start" element={<WordPage />}></Route>
+          {/*Quote Page */}
+          <Route path="/quote" element={<QuotePage />}></Route>
+          {/*Fact Page */}
+          <Route path="/fact" element={<FactPage />}></Route>
+          {/*Article Page */}
+          <Route path="/article" element={<ArticlePage />}></Route>
+          {/*Fortune Page */}
+          <Route path="/fortune" element={<FortunePage />}></Route>
+        </Routes>
       </BrowserRouter>
     </div>
   );

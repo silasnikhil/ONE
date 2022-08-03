@@ -22,27 +22,32 @@ const QuotePage = () => {
 
   if (!loading) {
     return (
-      <div className="quotebg absolute">
-        <div className="header-centered font-shadows text-5xl font-bold">
+      <div className="MainContainer quotebg">
+        <div className="header-centered text-white font-shadows text-5xl font-bold">
           YOUR QUOTE FOR THE DAY!
         </div>
         <div className="barpostop">
-          <img src={bar1} height="250" width="250" alt="Yellow Bar Top" />
+          <img src={bar1} alt="Yellow Bar Top" />
         </div>
-        <div className="centered shadow-xl text-white flex-wrap text-justify relative font-julius font-bold text-3xl">
+        <div className="quotestoppos">
+          <img src={quote1} alt="Quote1" />
+        </div>
+        <div className="centered shadow-xl max-h-96 max-w-xl text-white text-justify relative font-julius font-bold text-3xl">
           {jsonDataw[0].q}
+          {/* People tell you the world looks a certain way. Parents tell you how to
+          think. Schools tell you how to think. TV. Religion. And then at a
+          certain point, if you're lucky, you realize you can make up your own
+          mind. Nobody sets the rules but you. You can design your own life. */}
           <div className="shadow-xl pt-2 flex-wrap relative font-scrips fonts-semibold text-gray-400">
             {jsonDataw[0].a}
+            {/* Abigail Spencer */}
           </div>
         </div>
-        <div className="shadow-xl nearcen text-black">
-          <img src={quote1} height="80" width="80" alt="Quote1" />
-        </div>
-        <div className="shadow-xl nearcent text-black mt-20">
-          <img src={quote2} height="80" width="80" alt="Quote2" />
+        <div className="shadow-xl quotebottompos text-black mt-20">
+          <img src={quote2} alt="Quote2" />
         </div>
         <div className="barposdown">
-          <img src={bar1} height="250" width="250" alt="Yellow Bar bottom" />
+          <img src={bar1} alt="Yellow Bar bottom" />
         </div>
         <div className="arrowpos">
           <Link to="/fact">

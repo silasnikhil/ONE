@@ -12,7 +12,7 @@ const Welcome = () => {
   ];
   const random = Math.floor(Math.random() * 4);
   return (
-    <div className="flex-wrap justify-center">
+    <div className="flex-wrap justify-center gbg">
       <div>
         <img
           src={face}

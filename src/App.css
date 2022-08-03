@@ -168,7 +168,21 @@
 .blackbarpos {
   position: fixed;
   bottom: 28%;
-  right: 24%;
+  right: 26%;
+  /* bring your own prefixes */
+}
+
+.blackbarpos1 {
+  position: fixed;
+  bottom: 25%;
+  right: 26%;
+  /* bring your own prefixes */
+}
+
+.signpos {
+  position: fixed;
+  top: -15%;
+  right: 45%;
   /* bring your own prefixes */
 }
 

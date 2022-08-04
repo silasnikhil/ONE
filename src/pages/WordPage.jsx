@@ -13,7 +13,6 @@ const WordPage = () => {
       jsondata = json;
       setjsonDataw(jsondata);
       setLoading(false);
-      console.log(jsondata);
     });
   }, []);
 

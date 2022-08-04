@@ -14,7 +14,6 @@ const wordList = [
 let obj;
 
 const randomWord = Math.floor(Math.random() * 10);
-console.log(wordList[randomWord]);
 
 const baseURL =
   `https://api.dictionaryapi.dev/api/v2/entries/en/` + wordList[randomWord];

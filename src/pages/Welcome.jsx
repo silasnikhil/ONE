@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import face from "../assets/reflectly_face.gif";
-import Button from "../components/Button";
+import { UserAuth } from "../context/AuthContext";
 
 const Welcome = () => {
   const buttonText = [
@@ -11,6 +11,16 @@ const Welcome = () => {
     "Great, take me there!",
   ];
   const random = Math.floor(Math.random() * 4);
+
+  const { user, logOut } = UserAuth();
+
+  const handleSignOut = async () => {
+    try {
+      await logOut();
+    } catch (error) {
+      console.log(error);
+    }
+  };
   return (
     <div className="flex-wrap justify-center gbg">
       <div>
@@ -23,7 +33,7 @@ const Welcome = () => {
         />
       </div>
       <div className="flex mt-5 px-10 py-10 justify-center font-sans font-semibold text-white">
-        Hello there!<br></br>
+        Hello, {user?.displayName} <br></br>
         Welcome to The "ONE"
       </div>
       <div className=" px-5 pt-10 justify-start font-sans font-semibold text-gray-300 flex-wrap">
@@ -31,9 +41,16 @@ const Welcome = () => {
       </div>
       <div className=" mt-40">
         <Link to="/mood" className="btn btn-light btn-lg">
-          <span className=" text-indigo-400">{buttonText[random]}</span>
+          <span>{buttonText[random]}</span>
         </Link>
       </div>
+      <Link to="/">
+        <div className="mt-5">
+          <button onClick={handleSignOut} className="btn btn-light btn-lg">
+            LogOut
+          </button>
+        </div>
+      </Link>
     </div>
   );
 };
